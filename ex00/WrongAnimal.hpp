@@ -6,7 +6,7 @@
 /*   By: jenne <jpflegha@student.42heilbronn.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/17 17:06:34 by jenne             #+#    #+#             */
-/*   Updated: 2026/02/17 17:46:59 by jenne            ###   ########.fr       */
+/*   Updated: 2026/02/18 13:35:49 by jenne            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ protected:
     std::string _type;
 public:
     WrongAnimal();
-    WrongAnimal(const WrongCat& copy);
+    WrongAnimal(const WrongAnimal& copy);
     WrongAnimal& operator=(const WrongAnimal& copy);
     ~WrongAnimal();
 
