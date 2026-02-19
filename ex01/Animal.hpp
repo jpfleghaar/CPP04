@@ -6,7 +6,7 @@
 /*   By: jenne <jpflegha@student.42heilbronn.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/16 15:15:13 by jpflegha          #+#    #+#             */
-/*   Updated: 2026/02/17 13:57:42 by jenne            ###   ########.fr       */
+/*   Updated: 2026/02/19 16:57:08 by jenne            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,25 @@ protected:
     virtual ~Animal();
 };
 
+class Brain
+{
+private:
+    std::string ideas[100];
+public:
+    Brain();
+    Brain(const Brain& copy);
+    Brain& operator=(const Brain& copy);
+    ~Brain();
+};
+
+
+
+
 
 class Dog : public Animal
 {
+private:
+    Brain* brain;
 public:
     Dog();
     Dog(std::string type);
@@ -44,7 +60,8 @@ public:
 
 class Cat : public Animal
 {
-
+private:
+    Brain* brain;
 public:
     Cat();
     Cat(std::string type);

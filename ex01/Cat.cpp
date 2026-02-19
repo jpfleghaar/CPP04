@@ -6,7 +6,7 @@
 /*   By: jenne <jpflegha@student.42heilbronn.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/16 15:30:10 by jpflegha          #+#    #+#             */
-/*   Updated: 2026/02/17 14:34:40 by jenne            ###   ########.fr       */
+/*   Updated: 2026/02/19 16:58:50 by jenne            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,14 @@
 
 Cat::Cat() : Animal("cat")
 {
+    brain = new Brain();
     std::cout << "Cat default constructor called" << std::endl;
 }
 
 Cat::Cat(std::string type) : Animal(type)
 {
+    brain = new Brain();
+    std::cout << "Cat constructor called" << std::endl;
     
 }
 Cat::Cat(const Cat& copy) : Animal(copy)

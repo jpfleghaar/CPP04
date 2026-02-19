@@ -6,7 +6,7 @@
 /*   By: jenne <jpflegha@student.42heilbronn.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/17 13:35:14 by jenne             #+#    #+#             */
-/*   Updated: 2026/02/17 14:29:34 by jenne            ###   ########.fr       */
+/*   Updated: 2026/02/19 16:58:06 by jenne            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,12 @@
 
 Dog::Dog() : Animal("Dog")
 {
+    brain = new Brain();
     std::cout << "Dog default constructor called" << std::endl;
 }
 Dog::Dog(std::string type) : Animal(type)
 {
+    brain = new Brain();
     std::cout << "Dog construtor called" << std::endl;
 }
 Dog::Dog(const Dog& copy) : Animal(copy)
