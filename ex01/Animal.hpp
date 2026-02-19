@@ -6,7 +6,7 @@
 /*   By: jenne <jpflegha@student.42heilbronn.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/16 15:15:13 by jpflegha          #+#    #+#             */
-/*   Updated: 2026/02/19 16:57:08 by jenne            ###   ########.fr       */
+/*   Updated: 2026/02/19 18:02:31 by jenne            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,9 @@ public:
     Brain(const Brain& copy);
     Brain& operator=(const Brain& copy);
     ~Brain();
+
+    std::string getIdeas(int index) const; 
+    void setIdea(std::string idea, int index);
 };
 
 
@@ -53,6 +56,7 @@ public:
     Dog();
     Dog(std::string type);
     Dog(const Dog& copy);
+    Brain* getBrain() const;
     Dog& operator=(const Dog& copy);
     virtual void makeSound()const;
     ~Dog();
@@ -66,6 +70,7 @@ public:
     Cat();
     Cat(std::string type);
     Cat(const Cat& copy);
+    Brain* getBrain() const;
     Cat& operator=(const Cat& copy);
     virtual void makeSound() const;
     ~Cat();

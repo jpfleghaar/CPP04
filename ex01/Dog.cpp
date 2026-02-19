@@ -6,7 +6,7 @@
 /*   By: jenne <jpflegha@student.42heilbronn.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/17 13:35:14 by jenne             #+#    #+#             */
-/*   Updated: 2026/02/19 16:58:06 by jenne            ###   ########.fr       */
+/*   Updated: 2026/02/19 18:05:08 by jenne            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,18 +24,31 @@ Dog::Dog(std::string type) : Animal(type)
 }
 Dog::Dog(const Dog& copy) : Animal(copy)
 {
+    //Otherwise two Dogs would share the same pointer → double free crash
+    brain = new Brain(*copy.brain);
     std::cout << "Dog copy construtor called" << std::endl;
 }
 Dog &Dog::operator=(const Dog& copy)
 {
     if (this != &copy)
+    {
         _type = copy._type;
+        delete brain;
+        brain = new Brain(*copy.brain);
+
+    }
     std::cout << "Dog assigment operator called" << std::endl;
     return (*this);
 }
 
+Brain* Dog::getBrain() const
+{
+    return (brain);
+}
+
 Dog::~Dog()
 {
+    delete brain;
     std::cout << "Dog deconstructor called" << std::endl;
 }
 

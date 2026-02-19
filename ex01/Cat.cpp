@@ -6,7 +6,7 @@
 /*   By: jenne <jpflegha@student.42heilbronn.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/16 15:30:10 by jpflegha          #+#    #+#             */
-/*   Updated: 2026/02/19 16:58:50 by jenne            ###   ########.fr       */
+/*   Updated: 2026/02/19 18:04:15 by jenne            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,15 @@ Cat::Cat(std::string type) : Animal(type)
     std::cout << "Cat constructor called" << std::endl;
     
 }
+
+Brain* Cat::getBrain() const
+{
+    return (brain);
+}
+
 Cat::Cat(const Cat& copy) : Animal(copy)
 {
+    brain = new Brain(*copy.brain);
     std::cout << "Cat copy constructor called" << std::endl;
 }
 Cat& Cat::operator=(const Cat& copy)
@@ -38,6 +45,7 @@ Cat& Cat::operator=(const Cat& copy)
 
 Cat::~Cat()
 {
+    delete brain;
     std::cout << "Cat deconstructor called" << std::endl;
 }
 
