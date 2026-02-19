@@ -6,7 +6,7 @@
 /*   By: jenne <jpflegha@student.42heilbronn.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/16 15:30:10 by jpflegha          #+#    #+#             */
-/*   Updated: 2026/02/19 18:04:15 by jenne            ###   ########.fr       */
+/*   Updated: 2026/02/19 18:11:57 by jenne            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,9 @@ Cat::Cat(std::string type) : Animal(type)
     std::cout << "Cat constructor called" << std::endl;
     
 }
-
+//Brain getBrain(); // VERY WRONG (breaks deep copy test)
+//Brain* getBrain(); // weaker
+//Brain& getBrain(); // not needed here
 Brain* Cat::getBrain() const
 {
     return (brain);
