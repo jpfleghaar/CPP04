@@ -6,11 +6,11 @@
 /*   By: jenne <jpflegha@student.42heilbronn.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/19 16:55:27 by jenne             #+#    #+#             */
-/*   Updated: 2026/02/19 18:09:22 by jenne            ###   ########.fr       */
+/*   Updated: 2026/02/25 12:37:20 by jenne            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
+#include "Brain.hpp"
 
 Brain::Brain()
 {

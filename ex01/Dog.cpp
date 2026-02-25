@@ -6,11 +6,11 @@
 /*   By: jenne <jpflegha@student.42heilbronn.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/17 13:35:14 by jenne             #+#    #+#             */
-/*   Updated: 2026/02/19 18:05:08 by jenne            ###   ########.fr       */
+/*   Updated: 2026/02/25 12:35:37 by jenne            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
+#include "Dog.hpp"
 
 Dog::Dog() : Animal("Dog")
 {

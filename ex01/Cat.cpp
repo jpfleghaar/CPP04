@@ -6,11 +6,11 @@
 /*   By: jenne <jpflegha@student.42heilbronn.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/16 15:30:10 by jpflegha          #+#    #+#             */
-/*   Updated: 2026/02/19 18:11:57 by jenne            ###   ########.fr       */
+/*   Updated: 2026/02/25 12:35:31 by jenne            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
+#include "Cat.hpp"
 
 Cat::Cat() : Animal("cat")
 {
