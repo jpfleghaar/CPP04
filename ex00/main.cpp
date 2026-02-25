@@ -6,11 +6,13 @@
 /*   By: jenne <jpflegha@student.42heilbronn.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/17 13:02:35 by jenne             #+#    #+#             */
-/*   Updated: 2026/02/18 13:58:33 by jenne            ###   ########.fr       */
+/*   Updated: 2026/02/25 12:07:06 by jenne            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Animal.hpp"
+#include "Dog.hpp"
+#include "Cat.hpp"
 #include "WrongAnimal.hpp"
 
 int main()
