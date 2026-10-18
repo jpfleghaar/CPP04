@@ -12,7 +12,7 @@
 
 NAME = Polymorphism
 CC = c++
-CFLAGS = -Wall -Wextra -Werror -Wshadow -Wno-shadow -std=c++98
+CFLAGS = -Wall -Wextra -Werror -Wshadow -Wno-shadow -std=c++17
 SRC = main.cpp Animal.cpp Cat.cpp Dog.cpp WrongCat.cpp WrongAnimal.cpp Brain.cpp
 OBJ = $(SRC:.cpp=.o)
 
