@@ -1,6 +1,6 @@
 # C++ Module 04 — Subtype polymorphism, abstract classes, deep copies
 
-Animals that make their own sounds through base-class pointers, with deep-copied `Brain`s and an abstract base class (C++98).
+Animals that make their own sounds through base-class pointers, with deep-copied `Brain`s and an abstract base class.
 
 *This project was created as part of the 42 curriculum by jpflegha.*
 
@@ -35,7 +35,7 @@ meow meow meow
 ...
 ```
 
-The program is called `Polymorphism` in every exercise. Each exercise has its own Makefile (`c++ -Wall -Wextra -Werror -std=c++98`).
+The program is called `Polymorphism` in every exercise. Each exercise has its own Makefile (`c++ -Wall -Wextra -Werror -std=c++17`).
 
 ## Project structure
 
