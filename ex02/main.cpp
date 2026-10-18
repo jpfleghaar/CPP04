@@ -24,13 +24,13 @@ animals.push_back(new Dog()); // Adding a Dog object
 animals.push_back(new Cat()); // Adding a Cat object
 
 // AAnimal* b = new AAnimal;
-for (AAnimal* animal : animals) {
-        animal->makeSound(); // Polymorphic call to speak
+for (std::vector<AAnimal*>::iterator it = animals.begin(); it != animals.end(); ++it) {
+        (*it)->makeSound(); // Polymorphic call to speak
     }
 
     // Clean up memory
-    for (AAnimal* animal : animals) {
-        delete animal;
+    for (std::vector<AAnimal*>::iterator it = animals.begin(); it != animals.end(); ++it) {
+        delete *it;
     }
 return 0;
 }
